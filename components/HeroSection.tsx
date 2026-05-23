@@ -32,9 +32,9 @@ export function HeroSection() {
         </div>
       </header>
 
-      <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-8 md:pt-16 pb-10 md:pb-24 flex-1 flex items-center">
-        <div className="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
-          <h1 className="text-[52px] sm:text-5xl md:text-5xl lg:text-6xl font-semibold leading-[1.04] tracking-tight text-white animate-fade-in-up">
+      <div className="relative z-10 px-7 md:px-12 lg:px-16 pt-10 md:pt-16 pb-10 md:pb-24 flex-1 flex items-center">
+        <div className="w-full max-w-3xl mx-auto md:mx-0 text-center md:text-left">
+          <h1 className="text-[42px] sm:text-5xl md:text-5xl lg:text-6xl font-semibold leading-[1.12] tracking-[-0.02em] text-white animate-fade-in-up">
            Powering intelligent
             <br />
             call systems to
@@ -43,17 +43,17 @@ export function HeroSection() {
           </h1>
 
           <p
-            className="mt-6 max-w-3xl text-[clamp(1.05rem,1.1vw,19px)] leading-[1.3] font-medium tracking-[-0.01em] mx-auto md:mx-0"
+            className="mt-6 max-w-[34ch] md:max-w-3xl text-[17px] md:text-[clamp(1.05rem,1.1vw,19px)] leading-[1.35] font-medium tracking-[-0.01em] mx-auto md:mx-0"
             style={{ color: '#E5E5E5', fontFamily: 'Inter, var(--font-sans), sans-serif' }}
           >
             Navigate business growth with confidence by unifying outbound sales, inbound support, and lead generation in a scalable operating model
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-[520px] mx-auto md:mx-0">
-            <button className="bg-white text-black px-6 py-3.5 rounded-md text-base sm:text-sm font-medium hover:bg-gray-200 transition cursor-pointer select-none w-full sm:w-auto">
+          <div className="mt-8 flex flex-col items-stretch gap-4 max-w-[520px] mx-auto md:mx-0">
+            <button className="bg-white text-black px-6 py-3.5 rounded-xl text-[20px] md:text-sm font-medium hover:bg-gray-200 transition cursor-pointer select-none w-full">
               Get Free Consultation
             </button>
-            <button className="bg-transparent text-white px-6 py-3.5 rounded-md text-base sm:text-sm font-medium border border-white/60 hover:bg-white/10 transition cursor-pointer select-none w-full sm:w-auto">
+            <button className="bg-transparent text-white px-2 py-1 rounded-none text-[17px] md:text-sm font-medium border-0 border-b border-white/80 hover:text-white/85 transition cursor-pointer select-none w-fit self-center md:self-start">
               Book Demo
             </button>
           </div>
