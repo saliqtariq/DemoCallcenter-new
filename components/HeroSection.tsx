@@ -17,7 +17,7 @@ export function HeroSection() {
       }}
     >
 
-      <header className="relative z-10 flex items-center justify-between px-8 py-5 w-full bg-black border-b border-white/10">
+      <header className="relative z-10 flex items-center justify-between px-6 md:px-8 py-5 w-full bg-black border-b border-white/10">
         <h1 className="text-[22px] leading-none font-normal tracking-[-0.02em] text-white select-none">
           Demo Tech
         </h1>
@@ -32,9 +32,9 @@ export function HeroSection() {
         </div>
       </header>
 
-      <div className="relative z-10 px-8 md:px-12 lg:px-16 pt-16 pb-24 flex-1 flex items-center">
+      <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-10 md:pt-16 pb-16 md:pb-24 flex-1 flex items-center">
         <div className="max-w-3xl">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] tracking-tight text-white animate-fade-in-up">
+          <h1 className="text-[54px] sm:text-5xl md:text-5xl lg:text-6xl font-semibold leading-[1.03] tracking-tight text-white animate-fade-in-up">
            Powering intelligent
             <br />
             call systems to
@@ -43,19 +43,17 @@ export function HeroSection() {
           </h1>
 
           <p
-            className="mt-6 max-w-3xl text-[clamp(0.95rem,1.1vw,19px)] leading-[1.3] font-medium tracking-[-0.01em]"
+            className="mt-6 max-w-3xl text-[clamp(1.05rem,1.1vw,19px)] leading-[1.25] font-medium tracking-[-0.01em]"
             style={{ color: '#E5E5E5', fontFamily: 'Inter, var(--font-sans), sans-serif' }}
           >
-         Navigate business growth with confidence by unifying outbound sales,
-          inbound support, 
-         and lead generation in a scalable operating model
+            Navigate business growth with confidence by unifying outbound sales, inbound support, and lead generation in a scalable operating model
           </p>
 
-          <div className="mt-8 flex items-center gap-4">
-            <button className="bg-white text-black px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-200 transition cursor-pointer select-none">
+          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-[520px]">
+            <button className="bg-white text-black px-6 py-3.5 rounded-md text-base sm:text-sm font-medium hover:bg-gray-200 transition cursor-pointer select-none w-full sm:w-auto">
               Get Free Consultation
             </button>
-            <button className="bg-transparent text-white px-6 py-3 rounded-md text-sm font-medium border border-white/60 hover:bg-white/10 transition cursor-pointer select-none">
+            <button className="bg-transparent text-white px-6 py-3.5 rounded-md text-base sm:text-sm font-medium border border-white/60 hover:bg-white/10 transition cursor-pointer select-none w-full sm:w-auto">
               Book Demo
             </button>
           </div>
