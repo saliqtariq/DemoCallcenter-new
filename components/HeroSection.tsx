@@ -32,28 +32,44 @@ export function HeroSection() {
         </div>
       </header>
 
-      <div className="relative z-10 px-7 md:px-12 lg:px-16 pt-10 md:pt-16 pb-10 md:pb-24 flex-1 flex items-center">
-        <div className="w-full max-w-3xl mx-auto md:mx-0 text-center md:text-left">
-          <h1 className="text-[42px] sm:text-5xl md:text-5xl lg:text-6xl font-semibold leading-[1.12] tracking-[-0.02em] text-white animate-fade-in-up">
-           Powering intelligent
-            <br />
-            call systems to
-            <br />
-            drive better growth
+      <div className="relative z-10 w-full px-5 sm:px-6 md:px-12 lg:px-16 pt-4 sm:pt-8 md:pt-16 pb-12 md:pb-24 flex-1 flex items-center justify-center md:justify-start">
+        <div className="w-full max-w-[22rem] sm:max-w-xl md:max-w-3xl mx-auto md:mx-0 text-center md:text-left">
+          <h1
+            className="font-semibold text-white tracking-[-0.02em]"
+            style={{
+              fontSize: 'clamp(1.65rem, 5.5vw, 3.5rem)',
+              lineHeight: 1.08,
+            }}
+          >
+            <span className="block whitespace-nowrap">Powering intelligent</span>
+            <span className="block">call systems to</span>
+            <span className="block">drive better growth</span>
           </h1>
 
-          <p
-            className="mt-6 max-w-[34ch] md:max-w-3xl text-[17px] md:text-[clamp(1.05rem,1.1vw,19px)] leading-[1.35] font-medium tracking-[-0.01em] mx-auto md:mx-0"
-            style={{ color: '#E5E5E5', fontFamily: 'Inter, var(--font-sans), sans-serif' }}
-          >
-            Navigate business growth with confidence by unifying outbound sales, inbound support, and lead generation in a scalable operating model
+          <p className="mt-5 md:mt-6 mx-auto md:mx-0 max-w-[20rem] sm:max-w-md md:max-w-xl text-[0.9375rem] md:text-[1.0625rem] leading-[1.45] font-normal text-white/90">
+            Navigate business growth with confidence by unifying outbound sales,
+            inbound support, and lead generation in a scalable operating model
           </p>
 
-          <div className="mt-8 flex flex-col items-stretch gap-4 max-w-[520px] mx-auto md:mx-0">
-            <button className="bg-white text-black px-6 py-3.5 rounded-xl text-[20px] md:text-sm font-medium hover:bg-gray-200 transition cursor-pointer select-none w-full">
+          <div className="mt-7 md:mt-8 flex flex-col items-center md:items-start gap-4 w-full max-w-[20rem] sm:max-w-[520px] mx-auto md:mx-0">
+            <button
+              type="button"
+              className="w-full bg-white text-black py-3.5 rounded-md text-[0.9375rem] font-medium hover:bg-zinc-200 transition cursor-pointer select-none md:w-auto md:px-6"
+            >
               Get Free Consultation
             </button>
-            <button className="bg-transparent text-white px-2 py-1 rounded-none text-[17px] md:text-sm font-medium border-0 border-b border-white/80 hover:text-white/85 transition cursor-pointer select-none w-fit self-center md:self-start">
+
+            <a
+              href="#"
+              className="text-[0.9375rem] text-white underline underline-offset-4 hover:opacity-80 transition md:hidden"
+            >
+              Book Demo
+            </a>
+
+            <button
+              type="button"
+              className="hidden md:inline-flex bg-transparent text-white px-6 py-3.5 rounded-md text-sm font-medium border border-white/70 hover:bg-white/10 transition cursor-pointer select-none"
+            >
               Book Demo
             </button>
           </div>
