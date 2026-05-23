@@ -51,24 +51,16 @@ export function HeroSection() {
             inbound support, and lead generation in a scalable operating model
           </p>
 
-          <div className="mt-7 md:mt-8 flex flex-col items-center md:items-start gap-4 w-full max-w-[20rem] sm:max-w-[520px] mx-auto md:mx-0">
+          <div className="mt-7 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full max-w-[20rem] sm:max-w-[520px] mx-auto md:mx-0">
             <button
               type="button"
-              className="w-full bg-white text-black py-3.5 rounded-md text-[0.9375rem] font-medium hover:bg-zinc-200 transition cursor-pointer select-none md:w-auto md:px-6"
+              className="w-full bg-white text-black py-3.5 rounded-md text-[0.9375rem] font-medium hover:bg-zinc-200 transition cursor-pointer select-none sm:w-auto sm:px-6"
             >
               Get Free Consultation
             </button>
-
-            <a
-              href="#"
-              className="text-[0.9375rem] text-white underline underline-offset-4 hover:opacity-80 transition md:hidden"
-            >
-              Book Demo
-            </a>
-
             <button
               type="button"
-              className="hidden md:inline-flex bg-transparent text-white px-6 py-3.5 rounded-md text-sm font-medium border border-white/70 hover:bg-white/10 transition cursor-pointer select-none"
+              className="w-full bg-transparent text-white py-3.5 rounded-md text-[0.9375rem] font-medium border border-white/70 hover:bg-white/10 transition cursor-pointer select-none sm:w-auto sm:px-6"
             >
               Book Demo
             </button>
