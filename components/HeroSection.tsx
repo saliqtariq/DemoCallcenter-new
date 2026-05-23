@@ -10,7 +10,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative text-white min-h-screen overflow-hidden flex flex-col justify-between bg-cover bg-center bg-no-repeat"
+      className="relative text-white min-h-[78vh] md:min-h-screen overflow-hidden flex flex-col justify-between bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)), url('/images/againfixed.png')",
@@ -32,9 +32,9 @@ export function HeroSection() {
         </div>
       </header>
 
-      <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-10 md:pt-16 pb-16 md:pb-24 flex-1 flex items-center">
-        <div className="max-w-3xl">
-          <h1 className="text-[54px] sm:text-5xl md:text-5xl lg:text-6xl font-semibold leading-[1.03] tracking-tight text-white animate-fade-in-up">
+      <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-8 md:pt-16 pb-10 md:pb-24 flex-1 flex items-center">
+        <div className="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
+          <h1 className="text-[52px] sm:text-5xl md:text-5xl lg:text-6xl font-semibold leading-[1.04] tracking-tight text-white animate-fade-in-up">
            Powering intelligent
             <br />
             call systems to
@@ -43,13 +43,13 @@ export function HeroSection() {
           </h1>
 
           <p
-            className="mt-6 max-w-3xl text-[clamp(1.05rem,1.1vw,19px)] leading-[1.25] font-medium tracking-[-0.01em]"
+            className="mt-6 max-w-3xl text-[clamp(1.05rem,1.1vw,19px)] leading-[1.3] font-medium tracking-[-0.01em] mx-auto md:mx-0"
             style={{ color: '#E5E5E5', fontFamily: 'Inter, var(--font-sans), sans-serif' }}
           >
             Navigate business growth with confidence by unifying outbound sales, inbound support, and lead generation in a scalable operating model
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-[520px]">
+          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-[520px] mx-auto md:mx-0">
             <button className="bg-white text-black px-6 py-3.5 rounded-md text-base sm:text-sm font-medium hover:bg-gray-200 transition cursor-pointer select-none w-full sm:w-auto">
               Get Free Consultation
             </button>
