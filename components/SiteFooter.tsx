@@ -1,21 +1,10 @@
-const FOOTER_LINKS = {
-  Solutions: [
-    'Inbound Calls',
-    'Outbound Sales',
-    'Truck Dispatching',
-    'Digital Marketing',
-    'Social Media Management',
-  ],
-  Resources: ['Get a Quote', 'Blog', 'Case Studies', 'Market Updates'],
-  About: ['Our Approach', 'About Us', 'Careers', 'Contact Support'],
+﻿const FOOTER_LINKS = {
+  Services: ['Inbound Support', 'Outbound Sales', 'Appointment Setting'],
+  Company: ['Case Studies', 'Insights', 'About Us', 'Contact'],
+  Contact: ['hello@demotech.com', 'Mon-Sat, PKT', 'Book a Call'],
 };
 
-const LEGAL_LINKS = [
-  'Privacy policy',
-  'Terms of service',
-  'Trust center',
-  'Cookies Settings',
-];
+const LEGAL_LINKS = ['Privacy Policy', 'Terms of Service'];
 
 export function SiteFooter() {
   return (
@@ -25,7 +14,7 @@ export function SiteFooter() {
           <div className="max-w-sm">
             <div className="text-2xl font-bold tracking-tight mb-6">Demo Tech</div>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              *Demo Tech is a comprehensive agency providing inbound, outbound, truck dispatching, and digital marketing services to help your business scale globally.
+              Demo Tech helps businesses run inbound support, outbound sales, and appointment setting with dependable processes and trained call centre teams.
             </p>
           </div>
 

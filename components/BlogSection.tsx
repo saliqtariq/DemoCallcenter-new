@@ -1,31 +1,34 @@
-const ARTICLES = [
+﻿const ARTICLES = [
   {
     image:
-      'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop',
-    alt: 'Social Media',
-    title: 'Q1 2026 digital marketing update: What brands should be watching now',
+      'https://images.unsplash.com/photo-1573497019707-1c04de26e58c?q=80&w=2070&auto=format&fit=crop',
+    alt: 'Inbound support agents with headsets',
+    title: 'Inbound Support Playbook: reduce repeat calls with better call flows',
     excerpt:
-      'Our Q1 Market Update highlights several signals that marketing leaders should be watching closely. While conditions vary by channel, planning cycles are shortening, and flexibility is becoming more valuable than ever.',
-    meta: 'Mar 12, 2026 • News',
+      'Learn how to structure call routing, escalation paths, and QA checkpoints so customers get faster, clearer help from first contact to resolution.',
+    meta: 'Playbook',
+    cta: 'Read Playbook',
   },
   {
     image:
-      'https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2071&auto=format&fit=crop',
-    alt: 'Call Center',
+      'https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop',
+    alt: 'Outbound sales call and follow-up workflow',
     title:
-      'Eliminate friction across your inbound support flow—from first call to resolution',
+      'Outbound Sales Script Framework for higher-quality customer conversations',
     excerpt:
-      "Today's customer service teams face growing complexity from fragmented systems and manual processes. This guide shows how integrating end-to-end support with a strategic partner can simplify operations.",
-    meta: 'Jan 15, 2026 • Guides',
+      'Use a practical script structure for opening calls, handling objections, and qualifying intent while keeping conversations natural and customer-focused.',
+    meta: 'Guide',
+    cta: 'Read Guide',
   },
   {
     image:
-      'https://images.unsplash.com/photo-1586528116311-ad8ed7c1590f?q=80&w=2070&auto=format&fit=crop',
-    alt: 'Dispatching',
-    title: 'A guide to truck dispatching efficiency in 2026',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+    alt: 'CRM dashboard for appointment setting',
+    title: 'Appointment Setting SOP: from lead contact to confirmed booking',
     excerpt:
-      'As we move deeper into 2026, the logistics market is showing signs of change. To help mitigate risk, shippers should prepare for various market scenarios, and use real-time data to adapt to market conditions.',
-    meta: 'Dec 19, 2025 • News',
+      'This step-by-step SOP helps teams manage lead outreach, follow-up timing, and handoff to sales calendars without losing opportunities.',
+    meta: 'Template',
+    cta: 'View SOP',
   },
 ];
 
@@ -34,10 +37,10 @@ export function BlogSection() {
     <section className="bg-white py-24 px-6 text-black">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-center mb-16">
-          Latest updates and recommended content
+          Call Center Insights and Playbooks
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {ARTICLES.map(({ image, alt, title, excerpt, meta }) => (
+          {ARTICLES.map(({ image, alt, title, excerpt, meta, cta }) => (
             <div
               key={title}
               className="flex flex-col group cursor-pointer border border-zinc-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300"
@@ -52,7 +55,10 @@ export function BlogSection() {
               <div className="p-8 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold mb-4 leading-tight">{title}</h3>
                 <p className="text-zinc-600 mb-8 flex-1 leading-relaxed">{excerpt}</p>
-                <div className="text-sm text-zinc-500 font-medium">{meta}</div>
+                <div className="flex items-center justify-between gap-4 mt-auto">
+                  <div className="text-sm text-zinc-500 font-medium">{meta}</div>
+                  <span className="text-sm font-semibold text-black">{cta}</span>
+                </div>
               </div>
             </div>
           ))}

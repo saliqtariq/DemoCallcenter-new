@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { INDUSTRIES, DEFAULT_INDUSTRY_SLUG } from '@/data/industries';
@@ -65,7 +65,7 @@ export function IndustriesSection() {
                 type="button"
                 className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-zinc-800 transition-colors cursor-pointer"
               >
-                Learn More
+                View Services
               </button>
               <button
                 type="button"

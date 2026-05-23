@@ -1,9 +1,9 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { X } from 'lucide-react';
 
-const MENU_LINKS = ['Solutions', 'Technology', 'Industries', 'Resources', 'About'];
+const MENU_LINKS = ['Services', 'Industries', 'Case Studies', 'Insights', 'Contact'];
 
 export function HeroSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,6 @@ export function HeroSection() {
           "linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)), url('/images/againfixed.png')",
       }}
     >
-
       <header className="relative z-10 flex items-center justify-between px-6 md:px-8 py-5 w-full bg-black border-b border-white/10">
         <h1 className="text-[22px] leading-none font-normal tracking-[-0.02em] text-white select-none">
           Demo Tech
@@ -41,14 +40,13 @@ export function HeroSection() {
               lineHeight: 1.08,
             }}
           >
-            <span className="block whitespace-nowrap">Powering intelligent</span>
-            <span className="block">call systems to</span>
-            <span className="block">drive better growth</span>
+            <span className="block whitespace-nowrap">Call centre teams built to</span>
+            <span className="block">handle every conversation</span>
+            <span className="block">with clarity and consistency</span>
           </h1>
 
           <p className="mt-5 md:mt-6 mx-auto md:mx-0 max-w-[20rem] sm:max-w-md md:max-w-xl text-[0.9375rem] md:text-[1.0625rem] leading-[1.45] font-normal text-white/90">
-            Navigate business growth with confidence by unifying outbound sales,
-            inbound support, and lead generation in a scalable operating model
+            We help businesses run inbound support, outbound sales, and appointment setting with trained agents, clear workflows, and dependable day-to-day execution.
           </p>
 
           <div className="mt-7 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full max-w-[20rem] sm:max-w-[520px] mx-auto md:mx-0">
@@ -56,13 +54,13 @@ export function HeroSection() {
               type="button"
               className="w-full bg-white text-black py-3.5 rounded-md text-[0.9375rem] font-medium hover:bg-zinc-200 transition cursor-pointer select-none sm:w-auto sm:px-6"
             >
-              Get Free Consultation
+              Book a Call
             </button>
             <button
               type="button"
               className="w-full bg-transparent text-white py-3.5 rounded-md text-[0.9375rem] font-medium border border-white/70 hover:bg-white/10 transition cursor-pointer select-none sm:w-auto sm:px-6"
             >
-              Book Demo
+              View Services
             </button>
           </div>
         </div>
@@ -90,17 +88,9 @@ export function HeroSection() {
                 {link}
               </a>
             ))}
-            <div className="h-[1px] bg-white/10 my-4" />
-            <a
-              href="#"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-xl font-medium text-gray-400 hover:text-white transition"
-            >
-              Log in
-            </a>
           </div>
         </div>
       )}
     </section>
   );
-} 
+}

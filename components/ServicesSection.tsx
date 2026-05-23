@@ -14,7 +14,7 @@ export function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            Strategic services built for tomorrow&apos;s growth
+            Call centre services built for daily execution
           </h2>
          
         </div>
@@ -59,3 +59,4 @@ export function ServicesSection() {
     </section>
   );
 }
+

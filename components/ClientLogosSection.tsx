@@ -1,4 +1,4 @@
-const CLIENT_LOGOS = [
+﻿const CLIENT_LOGOS = [
   { name: 'Agencies', className: 'text-2xl font-bold tracking-tight' },
   { name: 'Zameen.com', className: 'text-2xl font-black tracking-tight' },
   { name: 'AdScale', className: 'text-2xl font-semibold italic' },
