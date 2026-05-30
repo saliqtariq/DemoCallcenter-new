@@ -1,4 +1,4 @@
-﻿const FOOTER_LINKS = {
+const FOOTER_LINKS = {
   Services: ['Inbound Support', 'Outbound Sales', 'Appointment Setting'],
   Company: ['Case Studies', 'Insights', 'About Us', 'Contact'],
   Contact: ['hello@demotech.com', 'Mon-Sat, PKT', 'Book a Call'],

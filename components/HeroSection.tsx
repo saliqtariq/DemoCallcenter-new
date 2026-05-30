@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useState } from 'react';
 import { X } from 'lucide-react';
@@ -50,18 +50,20 @@ export function HeroSection() {
           </p>
 
           <div className="mt-7 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full max-w-[20rem] sm:max-w-[520px] mx-auto md:mx-0">
-            <button
-              type="button"
-              className="w-full bg-white text-black py-3.5 rounded-md text-[0.9375rem] font-medium hover:bg-zinc-200 transition cursor-pointer select-none sm:w-auto sm:px-6"
+            <a
+              href="https://wa.me/923358746804"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center bg-white text-black py-3.5 rounded-md text-[0.9375rem] font-medium hover:bg-zinc-200 transition cursor-pointer select-none sm:w-auto sm:px-6"
             >
               Book a Call
-            </button>
-            <button
-              type="button"
-              className="w-full bg-transparent text-white py-3.5 rounded-md text-[0.9375rem] font-medium border border-white/70 hover:bg-white/10 transition cursor-pointer select-none sm:w-auto sm:px-6"
+            </a>
+            <a
+              href="#services"
+              className="w-full flex items-center justify-center bg-transparent text-white py-3.5 rounded-md text-[0.9375rem] font-medium border border-white/70 hover:bg-white/10 transition cursor-pointer select-none sm:w-auto sm:px-6"
             >
               View Services
-            </button>
+            </a>
           </div>
         </div>
       </div>
