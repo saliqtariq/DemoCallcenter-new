@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Headphones, 
   PhoneCall, 
@@ -26,7 +27,7 @@ export default function CallCenterSolutionsPage() {
         </div>
         <div className="max-w-5xl mx-auto text-center flex flex-col items-center w-full mt-20 md:mt-28">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8">
-            Call Center <span className="text-[#3b82f6]">Solutions</span>
+            Call Center <span className="text-white">Solutions</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/85 leading-relaxed mb-12 max-w-4xl">
             Our call center team handles customer conversations with clear scripts, QA monitoring, and KPI-based reporting so every call contributes to better business outcomes.
@@ -58,9 +59,7 @@ export default function CallCenterSolutionsPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">Comprehensive Call Center Services</h2>
-            <p className="text-zinc-600 text-xl leading-relaxed">
-              From handling customer inquiries to proactive sales campaigns, our trained agents operate as a seamless extension of your brand.
-            </p>
+           
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -100,7 +99,7 @@ export default function CallCenterSolutionsPage() {
                 key={feature.title}
                 className="bg-zinc-50 border border-black/10 p-8 rounded-2xl hover:bg-zinc-100 hover:shadow-md transition-all duration-300 group"
               >
-                <div className="w-12 h-12 bg-black/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors text-black">
+                <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-6 text-white">
                   <feature.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
@@ -113,41 +112,57 @@ export default function CallCenterSolutionsPage() {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="py-20 bg-black text-white px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+            {[
+              { value: '850K+', label: 'Calls Handled Annually' },
+              { value: '92%', label: 'CSAT Score' },
+              { value: '< 30s', label: 'Avg Speed of Answer' },
+              { value: '24/7', label: 'Support Coverage' },
+            ].map((stat) => (
+              <div key={stat.label} className="flex flex-col items-center justify-center space-y-2">
+                <div className="text-4xl md:text-5xl font-bold tracking-tight text-white">{stat.value}</div>
+                <div className="text-zinc-400 text-sm md:text-base font-medium uppercase tracking-wider">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Detailed Capabilities */}
-      <section className="py-24 bg-white/[0.02] border-t border-white/10 px-6">
+      <section className="py-24 bg-white text-black px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Built for scale, trained for excellence.</h2>
-            <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
-              We don't just answer phones; we build dedicated teams that understand your product inside out. We integrate with your existing CRM and workflows for a fully seamless operation.
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Advanced Call Center Technology</h2>
+            <p className="text-zinc-600 text-lg mb-8 leading-relaxed">
+              We equip our teams with state-of-the-art tools and integrate directly with your existing systems. From real-time analytics to AI-assisted quality assurance, we ensure every call is optimized for success.
             </p>
             
             <ul className="space-y-4">
               {[
-                'Custom script development and rigorous agent training',
-                'Seamless integration with Salesforce, HubSpot, and Zendesk',
-                'Dedicated account managers for continuous improvement',
-                'Scalable team sizes to handle seasonal volume spikes'
+                'Native CRM integration (Salesforce, HubSpot, Zendesk)',
+                'Live performance dashboards and call monitoring',
+                'AI-driven sentiment analysis and QA scorecards',
+                'Automated ticket routing for faster resolutions'
               ].map((item) => (
                 <li key={item} className="flex items-start">
-                  <CheckCircle2 className="w-6 h-6 text-white mr-4 shrink-0" />
-                  <span className="text-zinc-300">{item}</span>
+                  <CheckCircle2 className="w-6 h-6 text-blue-600 mr-4 shrink-0" />
+                  <span className="text-zinc-700">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="relative">
-            <div className="aspect-square md:aspect-[4/3] rounded-2xl bg-zinc-900 border border-white/10 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800/20 to-transparent z-10" />
-              <div className="absolute inset-0 p-8 flex flex-col gap-4 opacity-30">
-                <div className="w-full h-1/3 bg-white/10 rounded-lg animate-pulse" />
-                <div className="flex gap-4 h-1/3">
-                  <div className="w-1/2 h-full bg-white/5 rounded-lg" />
-                  <div className="w-1/2 h-full bg-white/10 rounded-lg animate-pulse" />
-                </div>
-                <div className="w-2/3 h-1/3 bg-white/5 rounded-lg" />
-              </div>
-            </div>
+            <Image 
+              src="/images/CallCentreSolutions.png" 
+              alt="Call Center Solutions Dashboard" 
+              width={800} 
+              height={600} 
+              className="w-full h-auto object-contain rounded-2xl shadow-xl border border-black/10"
+              priority
+            />
           </div>
         </div>
       </section>
